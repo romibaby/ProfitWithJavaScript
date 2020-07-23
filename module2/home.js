@@ -1,4 +1,4 @@
-        console.log('hello');
+Q        console.log('hello');
       //  alert('hello this is Rachelle');
 var b = 'smothie';
 console.log(b);
@@ -58,3 +58,13 @@ var someNumber = 45;
  for (let num = 0; num < 100; num++) {
  console.log(num);
  }
+
+ // Data types
+let yourAge = 18; // number
+let yourName = 'Bod' // string
+let name = {first: 'Jane', Lat: 'Doe'}; // object
+let truth = false; // boolean
+let groceries = ['apple', 'banana', 'oranges']; //array
+let random; // undefined
+let nothing = null; // value null
+
