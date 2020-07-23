@@ -100,6 +100,9 @@ console.log('to string', fruits.toString());
 console.log(fruits.join(' * '));
 console.log(fruits.pop(), fruits); //removes last item
 console.log(fruits.push('blackberries'), fruits); //appends
-fruits[6] = 
+console.log(fruits[4]); 
 
-
+fruits[fruits.length] = 'new fruit'; //same as push
+consoles.log(fruits)
+fruits.shift(); // remove first element from a list
+console.log(fruits)
