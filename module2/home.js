@@ -88,6 +88,7 @@ let fruits = ['banana', 'apple', 'orange', 'pineapples'];
 fruits = new Array('banana', 'apple', 'orange', 'pineapples');
 
 console.log(fruits[2]); //access value at index 2nd
+
 fruits[0] = 'pear';
 console.log(fruits);
 
@@ -100,9 +101,53 @@ console.log('to string', fruits.toString());
 console.log(fruits.join(' * '));
 console.log(fruits.pop(), fruits); //removes last item
 console.log(fruits.push('blackberries'), fruits); //appends
-console.log(fruits[4]); 
-
+console.log(fruits[4]);
 fruits[fruits.length] = 'new fruit'; //same as push
-consoles.log(fruits)
+console.log(fruits)
+
 fruits.shift(); // remove first element from a list
 console.log(fruits)
+fruits.unshift('kiwi'); //add first element to a array
+console.log(fruits)
+
+let vegetables = ['asparagus', 'tomato', 'broccoli'];
+let allGroceries = fruits.concat(vegetables);
+console.log(allGroceries);
+
+console.log(allGroceries.slice(1, 4));
+console.log(allGroceries.reverse());
+console.log(allGroceries.sort());
+
+let someNumbers = [5, 10, 2, 2, 3, 255, 1, 2, 5, 334, 321, 2];
+console.log(someNumbers.sort(function(a, b) {return a-b})); //sorted in ascending order
+console.log(someNumbers.sort(function(a, b) {return b-a})); //sorted in descending order
+
+let emptyArray = new Array();
+for (let num = 0; num <= 10; num++) {
+  emptyArray.push(num);
+}
+
+console.log(emptyArray);
+
+// objects in Jvascript
+// dictionaries in Python
+
+let student = {
+  first: 'Rafeh',
+  last: 'Qazi', 
+  age:25, 
+  height:170,
+  studentInfo:function (){
+    return this.first + '\n' + this.last + '\n' + this.age;
+  }
+};
+// console.log(student.first);
+// console.log(student.last);
+// student.first = 'notRafeh'; // change value
+// console.log(student.first);
+// student.first = 'yesRafeh';
+// console.log(student.first);
+student.age++;
+console.log(student.first);
+// console.log(student.age);
+console.log(student.studentInfo());
