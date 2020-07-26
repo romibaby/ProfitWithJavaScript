@@ -151,3 +151,4 @@ student.age++;
 console.log(student.first);
 // console.log(student.age);
 console.log(student.studentInfo());
+
